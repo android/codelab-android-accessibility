@@ -1,4 +1,4 @@
-# Google Sheets API Codelab
+# basic-android-accessibility
 
 This folder contains the source code for a Google I/O 2016 codelab.
 
