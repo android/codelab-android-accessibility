@@ -71,10 +71,5 @@ public class LiveRegionActivity extends AppCompatActivity {
                 }
             });
         }
-
-        if (mFeedbackTextView != null) {
-            ViewCompat.setAccessibilityLiveRegion(mFeedbackTextView,
-                    ViewCompat.ACCESSIBILITY_LIVE_REGION_POLITE);
-        }
     }
 }
