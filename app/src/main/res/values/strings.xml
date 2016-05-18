@@ -76,5 +76,5 @@
         eget, arcu.
     </string>
 
-    <string name="high_contrast">High contrast</string>
+    <string name="fix_low_contrast">Fix low contrast</string>
 </resources>

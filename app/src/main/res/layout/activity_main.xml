@@ -48,13 +48,6 @@
         android:text="@string/title_activity_live_region" />
 
     <Button
-        android:id="@+id/activity_important_for_a11y_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_important_for_a11y" />
-
-    <Button
         android:id="@+id/activity_expand_touch_area_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

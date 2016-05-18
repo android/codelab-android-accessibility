@@ -40,10 +40,6 @@
             android:label="@string/title_activity_live_region"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.android.basicandroidaccessibility.ImportantForA11yActivity"
-            android:label="@string/title_activity_important_for_a11y"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.example.android.basicandroidaccessibility.ExpandTouchAreaActivity"
             android:label="@string/title_activity_expand_touch_area"
             android:theme="@style/AppTheme.NoActionBar" />

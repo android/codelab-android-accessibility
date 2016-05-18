@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 return ContentGroupingActivity.class;
             case R.id.activity_live_region_button:
                 return LiveRegionActivity.class;
-            case R.id.activity_important_for_a11y_button:
-                return ImportantForA11yActivity.class;
             case R.id.activity_expand_touch_area_button:
                 return ExpandTouchAreaActivity.class;
             case R.id.activity_insufficient_contrast_button:
