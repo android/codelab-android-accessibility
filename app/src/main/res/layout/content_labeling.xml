@@ -53,7 +53,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:contentDescription="@null"
                 android:src="@drawable/ic_music_note" />
         </LinearLayout>
 
@@ -82,7 +81,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@null"
-        android:contentDescription="@string/share"
         android:src="@drawable/ic_share" />
 
     <ImageButton
