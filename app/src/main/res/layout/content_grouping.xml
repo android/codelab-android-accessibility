@@ -39,8 +39,7 @@
     <RelativeLayout
         android:id="@+id/song_data_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/label_song_name"
@@ -62,12 +61,7 @@
             android:layout_alignTop="@+id/label_song_name"
             android:text="@string/value_song_name"
             android:textColor="@color/dark_grey" />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true">
 
         <TextView
             android:id="@+id/label_song_artists"
@@ -75,6 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_below="@id/label_song_name"
             android:layout_margin="@dimen/tiny_margin"
             android:text="@string/label_song_artists"
             android:textColor="@color/dark_grey" />
@@ -89,19 +84,13 @@
             android:text="@string/value_song_artists"
             android:textColor="@color/dark_grey" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true">
-
         <TextView
             android:id="@+id/label_song_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_below="@id/label_song_artists"
             android:layout_margin="@dimen/tiny_margin"
             android:text="@string/label_song_cost"
             android:textColor="@color/dark_grey" />
