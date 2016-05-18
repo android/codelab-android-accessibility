@@ -33,7 +33,5 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@null"
-        android:contentDescription="@null"
-        android:minHeight="48dp"
-        android:minWidth="48dp" />
+        android:contentDescription="@null" />
 </RelativeLayout>
