@@ -1,6 +1,12 @@
 # basic-android-accessibility
 
-This folder contains the source code for a Google I/O 2016 codelab.
+This folder contains the source code for the following codelabs:
+
+- [BasicAndroidAccessibility](https://github.com/googlecodelabs/basic-android-accessibility/tree/master/BasicAndroidAccessibility):
+a first course in understanding the basics of Android accessibility.
+
+- [GlobalActionBarService](https://github.com/googlecodelabs/basic-android-accessibility/tree/master/GlobalActionBarService):
+a codelab for learning how to create an accessibility service from scratch.
 
 ### License
 
