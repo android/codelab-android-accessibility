@@ -15,10 +15,11 @@
 package com.example.android.basicandroidaccessibility;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toolbar;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ExpandTouchAreaActivity extends AppCompatActivity {
     private boolean mPlaying = false;
@@ -29,7 +30,7 @@ public class ExpandTouchAreaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expand_touch_area);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setActionBar(toolbar);
 
         mToggleImageButton = findViewById(R.id.play_pause_toggle_view);
         if (mToggleImageButton != null) {

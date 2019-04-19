@@ -15,14 +15,16 @@
 package com.example.android.basicandroidaccessibility;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toolbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class InsufficientContrastActivity extends AppCompatActivity {
 
@@ -36,7 +38,7 @@ public class InsufficientContrastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insufficient_contrast);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setActionBar(toolbar);
 
         mLoremIpsumContainer = findViewById(R.id.lorem_ipsum_container);
         mLoremIpsumTitle = findViewById(R.id.lorem_ipsum_title);
