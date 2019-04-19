@@ -35,15 +35,15 @@ public class InsufficientContrastActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insufficient_contrast);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mLoremIpsumContainer = (RelativeLayout) findViewById(R.id.lorem_ipsum_container);
-        mLoremIpsumTitle = (TextView) findViewById(R.id.lorem_ipsum_title);
-        mLoremIpsumText = (TextView) findViewById(R.id.lorem_ipsum_text);
-        mAddItemFab = (FloatingActionButton) findViewById(R.id.add_item_fab);
+        mLoremIpsumContainer = findViewById(R.id.lorem_ipsum_container);
+        mLoremIpsumTitle = findViewById(R.id.lorem_ipsum_title);
+        mLoremIpsumText = findViewById(R.id.lorem_ipsum_text);
+        mAddItemFab = findViewById(R.id.add_item_fab);
 
-        CheckBox colorContrastCheckbox = (CheckBox) findViewById(R.id.color_contrast_checkbox);
+        CheckBox colorContrastCheckbox = findViewById(R.id.color_contrast_checkbox);
         if (colorContrastCheckbox != null) {
             colorContrastCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override

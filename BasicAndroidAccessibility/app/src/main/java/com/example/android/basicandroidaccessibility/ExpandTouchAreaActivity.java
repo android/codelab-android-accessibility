@@ -28,10 +28,10 @@ public class ExpandTouchAreaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expand_touch_area);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mToggleImageButton = (ImageButton) findViewById(R.id.play_pause_toggle_view);
+        mToggleImageButton = findViewById(R.id.play_pause_toggle_view);
         if (mToggleImageButton != null) {
             setUI();
             mToggleImageButton.setOnClickListener(new View.OnClickListener() {
