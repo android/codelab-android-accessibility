@@ -16,13 +16,13 @@ package com.example.android.basicandroidaccessibility;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toolbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,14 +35,14 @@ public class LiveRegionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_region);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setActionBar(toolbar);
 
         List<String> androidVersions = new ArrayList<>(Arrays.asList(getResources().getStringArray(
                 R.array.android_versions)));
         final int correctAnswerIndex = androidVersions.indexOf(getString(R.string.lollipop));
-        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
-        mFeedbackTextView = (TextView) findViewById(R.id.feedback_text_view);
+        final RadioGroup radioGroup = findViewById(R.id.radio_group);
+        mFeedbackTextView = findViewById(R.id.feedback_text_view);
 
         if (radioGroup != null && correctAnswerIndex != -1) {
             for (int i = 0; i < androidVersions.size(); i++) {
