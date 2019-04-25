@@ -13,51 +13,29 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
--->
-
+ -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.basicandroidaccessibility.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/activity_content_labeling_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_content_labeling" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
-    <Button
-        android:id="@+id/activity_content_grouping_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_content_grouping" />
-
-    <Button
-        android:id="@+id/activity_live_region_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_live_region" />
-
-    <Button
-        android:id="@+id/activity_expand_touch_area_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_expand_touch_area" />
-
-    <Button
-        android:id="@+id/activity_insufficient_contrast_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="launchActivity"
-        android:text="@string/title_activity_insufficient_contrast" />
+        <fragment
+            android:id="@+id/my_nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
 </LinearLayout>
+
