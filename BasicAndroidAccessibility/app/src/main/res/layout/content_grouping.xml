@@ -45,7 +45,6 @@
             android:id="@+id/label_song_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_margin="@dimen/tiny_margin"
@@ -57,7 +56,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/label_song_name"
             android:text="@string/value_song_name"
             android:textColor="@color/dark_grey" />
@@ -67,7 +65,6 @@
             android:id="@+id/label_song_artists"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@id/label_song_name"
             android:layout_margin="@dimen/tiny_margin"
@@ -79,7 +76,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/label_song_artists"
             android:text="@string/value_song_artists"
             android:textColor="@color/dark_grey" />
@@ -88,7 +84,6 @@
             android:id="@+id/label_song_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@id/label_song_artists"
             android:layout_margin="@dimen/tiny_margin"
@@ -100,7 +95,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/label_song_cost"
             android:text="@string/value_song_cost"
             android:textColor="@color/dark_grey" />
