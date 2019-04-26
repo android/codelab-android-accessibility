@@ -30,29 +30,29 @@
         android:id="@+id/content_labeling_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_content_labeling" />
+        android:text="@string/fragment_content_labeling" />
 
     <Button
         android:id="@+id/content_grouping_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_content_grouping" />
+        android:text="@string/fragment_content_grouping" />
 
     <Button
         android:id="@+id/live_region_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_live_region" />
+        android:text="@string/fragment_live_region" />
 
     <Button
         android:id="@+id/expand_touch_area_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_expand_touch_area" />
+        android:text="@string/fragment_expand_touch_area" />
 
     <Button
         android:id="@+id/insufficient_contrast_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_insufficient_contrast" />
+        android:text="@string/fragment_insufficient_contrast" />
 </LinearLayout>

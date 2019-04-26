@@ -19,12 +19,12 @@
     <fragment
         android:id="@+id/liveRegionFragment"
         android:name="com.example.android.basicandroidaccessibility.LiveRegionFragment"
-        android:label="fragment_live_region"
+        android:label="@string/fragment_live_region"
         tools:layout="@layout/fragment_live_region" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.android.basicandroidaccessibility.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/fragment_home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_liveRegionFragment"
@@ -45,21 +45,21 @@
     <fragment
         android:id="@+id/contentGroupingFragment"
         android:name="com.example.android.basicandroidaccessibility.ContentGroupingFragment"
-        android:label="fragment_content_grouping"
+        android:label="@string/fragment_content_grouping"
         tools:layout="@layout/fragment_content_grouping" />
     <fragment
         android:id="@+id/contentLabelingFragment"
         android:name="com.example.android.basicandroidaccessibility.ContentLabelingFragment"
-        android:label="fragment_content_labeling"
+        android:label="@string/fragment_content_labeling"
         tools:layout="@layout/fragment_content_labeling" />
     <fragment
         android:id="@+id/expandTouchAreaFragment"
         android:name="com.example.android.basicandroidaccessibility.ExpandTouchAreaFragment"
-        android:label="fragment_expand_touch_area"
+        android:label="@string/fragment_expand_touch_area"
         tools:layout="@layout/fragment_expand_touch_area" />
     <fragment
         android:id="@+id/insufficientContrastFragment"
         android:name="com.example.android.basicandroidaccessibility.InsufficientContrastFragment"
-        android:label="fragment_insufficient_contrast"
+        android:label="@string/fragment_insufficient_contrast"
         tools:layout="@layout/fragment_insufficient_contrast" />
 </navigation>

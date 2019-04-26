@@ -17,17 +17,17 @@
 <resources>
     <string name="app_name">Basic Android Accessibility Codelab</string>
 
-    <string name="title_activity_content_labeling">
+    <string name="fragment_content_labeling">
         Content labeling activity</string>
-    <string name="title_activity_live_region">Live region activity</string>
+    <string name="fragment_live_region">Live region activity</string>
 
-    <string name="title_activity_main">Main Activity</string>
-    <string name="title_activity_hidden_view">HiddenViewActivity</string>
-    <string name="title_activity_switch_access">SwitchAccessActivity</string>
-    <string name="title_activity_scratch">ScratchActivity</string>
-    <string name="title_activity_important_for_a11y">Important For Accessibility Activity</string>
-    <string name="title_activity_expand_touch_area">Expand Touch Area Activity</string>
-    <string name="title_activity_insufficient_contrast">Insufficient Contrast Activity</string>
+    <string name="fragment_home">Main Activity</string>
+    <string name="fragment_hidden_view">HiddenViewActivity</string>
+    <string name="fragment_switch_access">SwitchAccessActivity</string>
+    <string name="fragment_scratch">ScratchActivity</string>
+    <string name="fragment_important_for_a11y">Important For Accessibility Activity</string>
+    <string name="fragment_expand_touch_area">Expand Touch Area Activity</string>
+    <string name="fragment_insufficient_contrast">Insufficient Contrast Activity</string>
 
     <string name="play">Play</string>
     <string name="cancel">Cancel</string>
@@ -55,7 +55,7 @@
     <string name="go">Go</string>
 
     <string name="song_edit_text_label">Song</string>
-    <string name="title_activity_content_grouping">Content Grouping Activity</string>
+    <string name="fragment_content_grouping">Content Grouping Activity</string>
 
     <string name="song_details">Song Details</string>
     <string name="label_song_name">Name</string>
