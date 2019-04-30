@@ -65,7 +65,6 @@
     <string name="label_song_cost">Cost</string>
     <string name="value_song_cost">$1.45</string>
 
-
     <string name="lorem_ipsum_title">Lorem Ipsum</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -76,7 +75,4 @@
     </string>
 
     <string name="fix_low_contrast">Fix low contrast</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

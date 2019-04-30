@@ -26,10 +26,13 @@ import android.widget.ImageButton
 class ExpandTouchAreaFragment : Fragment() {
 
     private lateinit var toggleImageButton: ImageButton
-    private var playing:Boolean = false
+    private var playing: Boolean = false
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_expand_touch_area, container, false)
     }
@@ -39,24 +42,19 @@ class ExpandTouchAreaFragment : Fragment() {
         toggleImageButton = view.findViewById(R.id.play_pause_toggle_view)
 
         setUI()
-        toggleImageButton.setOnClickListener(View.OnClickListener {
+        toggleImageButton.setOnClickListener {
             playing = !playing
             setUI()
-        })
-
-    }
-
-    private fun setUI() {
-        when (playing) {
-            true -> {
-                toggleImageButton.setImageResource(R.drawable.ic_cancel)
-                toggleImageButton.setContentDescription("Cancel")
-            }
-            false -> {
-                toggleImageButton.setImageResource(R.drawable.ic_play_circle_outline)
-                toggleImageButton.setContentDescription("Refresh")
-            }
         }
     }
 
+    private fun setUI() {
+        if (playing) {
+            toggleImageButton.setImageResource(R.drawable.ic_cancel)
+            toggleImageButton.contentDescription = "Cancel"
+        } else {
+            toggleImageButton.setImageResource(R.drawable.ic_play_circle_outline)
+            toggleImageButton.contentDescription = "Refresh"
+        }
+    }
 }
