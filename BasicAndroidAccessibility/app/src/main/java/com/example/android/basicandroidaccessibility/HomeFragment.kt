@@ -24,8 +24,11 @@ import android.widget.Button
 import androidx.navigation.Navigation
 
 class HomeFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
@@ -34,19 +37,24 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val buttonContentLabeling = view.findViewById<Button>(R.id.content_labeling_button)
-        buttonContentLabeling.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_contentLabelingFragment, null))
+        buttonContentLabeling.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_contentLabelingFragment, null))
 
         val buttonContentGrouping = view.findViewById<Button>(R.id.content_grouping_button)
-        buttonContentGrouping.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_contentGroupingFragment, null))
+        buttonContentGrouping.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_contentGroupingFragment, null))
 
         val buttonLiveRegion = view.findViewById<Button>(R.id.live_region_button)
-        buttonLiveRegion.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_liveRegionFragment, null))
+        buttonLiveRegion.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_liveRegionFragment, null))
 
         val buttonExpandTouchArea = view.findViewById<Button>(R.id.expand_touch_area_button)
-        buttonExpandTouchArea.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_expandTouchAreaFragment, null))
+        buttonExpandTouchArea.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_expandTouchAreaFragment, null))
 
         val buttonInsufficientContrast = view.findViewById<Button>(R.id.insufficient_contrast_button)
-        buttonInsufficientContrast.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_insufficientContrastFragment, null))
+        buttonInsufficientContrast.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_insufficientContrastFragment, null))
 
     }
 }

@@ -33,8 +33,11 @@ class InsufficientContrastFragment : Fragment() {
     private lateinit var loremIpsumText: TextView
     private lateinit var addItemFab: FloatingActionButton
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_insufficient_contrast, container, false)
     }
@@ -57,20 +60,23 @@ class InsufficientContrastFragment : Fragment() {
     }
 
     private fun useHighContrast() {
-        loremIpsumContainer.setBackgroundColor(ContextCompat.getColor(context!!, R.color.white))
-        loremIpsumTitle.setTextColor(ContextCompat.getColor(context!!, R.color.medium_grey))
-        loremIpsumText.setTextColor(ContextCompat.getColor(context!!, R.color.dark_grey))
-        addItemFab.backgroundTintList = ContextCompat.getColorStateList(context!!,
-                R.color.colorPrimaryDark)
+        context?.let {
+            loremIpsumContainer.setBackgroundColor(ContextCompat.getColor(it, R.color.white))
+            loremIpsumTitle.setTextColor(ContextCompat.getColor(it, R.color.medium_grey))
+            loremIpsumText.setTextColor(ContextCompat.getColor(it, R.color.dark_grey))
+            addItemFab.backgroundTintList = ContextCompat.getColorStateList(it,
+                    R.color.colorPrimaryDark)
+        }
     }
 
     private fun useLowContrast() {
-        loremIpsumContainer.setBackgroundColor(ContextCompat.getColor(context!!,
-                R.color.very_light_grey))
-        loremIpsumTitle.setTextColor(ContextCompat.getColor(context!!, R.color.light_grey))
-        loremIpsumText.setTextColor(ContextCompat.getColor(context!!, R.color.medium_grey))
-        addItemFab.backgroundTintList = ContextCompat.getColorStateList(context!!,
-                R.color.colorPrimaryLight)
+        context?.let {
+            loremIpsumContainer.setBackgroundColor(ContextCompat.getColor(it, R.color.very_light_grey))
+            loremIpsumTitle.setTextColor(ContextCompat.getColor(it, R.color.light_grey))
+            loremIpsumText.setTextColor(ContextCompat.getColor(it, R.color.medium_grey))
+            addItemFab.backgroundTintList = ContextCompat.getColorStateList(it,
+                    R.color.colorPrimaryLight)
+        }
     }
 
 }

@@ -16,13 +16,11 @@
 
 package com.example.android.basicandroidaccessibility
 
-import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
-import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
 class MainActivity : AppCompatActivity() {
@@ -32,16 +30,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
-        val host: NavHostFragment = supportFragmentManager
-                .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment? ?: return
-
-        // Set up Action Bar
-        val navController = host.navController
-
+        val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
         toolbar.setupWithNavController(navController, appBarConfiguration)
 
     }

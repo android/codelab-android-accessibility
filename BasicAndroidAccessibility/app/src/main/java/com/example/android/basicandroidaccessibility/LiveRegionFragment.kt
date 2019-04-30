@@ -24,7 +24,9 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import java.util.*
+import java.util.Arrays
+import kotlin.collections.ArrayList
+
 
 class LiveRegionFragment : Fragment() {
 
@@ -34,40 +36,42 @@ class LiveRegionFragment : Fragment() {
         val androidVersions = ArrayList(Arrays.asList(*resources.getStringArray(
                 R.array.android_versions)))
         val correctAnswerIndex = androidVersions.indexOf(getString(R.string.lollipop))
-        val radioGroup = view.findViewById<RadioGroup>(R.id.radio_group)
-        val feedbackTextView = view.findViewById<TextView>(R.id.feedback_text_view)
+        val radioGroup: RadioGroup = view.findViewById(R.id.radio_group)
+        val feedbackTextView: TextView = view.findViewById(R.id.feedback_text_view)
 
-        if (radioGroup != null && correctAnswerIndex != -1) {
-            for (i in androidVersions.indices) {
-                val radioButton = RadioButton(context)
-                radioButton.text = androidVersions[i]
-                radioButton.id = i
-                radioButton.setPadding(36, 36, 36, 36)
-                radioButton.textSize = 18f
-                radioGroup.addView(radioButton)
-            }
+        androidVersions.indices.forEach { i ->
+            val radioButton = RadioButton(context)
+            radioButton.text = androidVersions[i]
+            radioButton.id = i
+            radioButton.setPadding(36, 36, 36, 36)
+            radioButton.textSize = 18f
+            radioGroup.addView(radioButton)
+        }
 
-            context?.let {
-                radioGroup.setOnCheckedChangeListener { _, checkedId ->
-                    when (radioGroup.indexOfChild(view.findViewById<View>(checkedId))) {
-                        correctAnswerIndex -> {
-                            feedbackTextView.setText(R.string.correct)
-                            feedbackTextView.setBackgroundColor(ContextCompat.getColor(it,
-                                    R.color.green))
-                        }
-                        else -> {
-                            feedbackTextView.setText(R.string.incorrect)
-                            feedbackTextView.setBackgroundColor(ContextCompat.getColor(it,
-                                    R.color.red))
-                        }
+        context?.let {
+            radioGroup.setOnCheckedChangeListener { _, checkedId ->
+                when (radioGroup.indexOfChild(view.findViewById<View>(checkedId))) {
+                    correctAnswerIndex -> {
+                        feedbackTextView.setText(R.string.correct)
+                        feedbackTextView.setBackgroundColor(ContextCompat.getColor(it,
+                                R.color.green))
+                    }
+                    else -> {
+                        feedbackTextView.setText(R.string.incorrect)
+                        feedbackTextView.setBackgroundColor(ContextCompat.getColor(it,
+                                R.color.red))
                     }
                 }
             }
         }
+
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_live_region, container, false)
     }
