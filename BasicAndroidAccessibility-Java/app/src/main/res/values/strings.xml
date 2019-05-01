@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Basic Android Accessibility Codelab</string>
+
+    <string name="title_activity_content_labeling">
+        Content labeling activity</string>
+    <string name="title_activity_live_region">Live region activity</string>
+
+    <string name="title_activity_main">Main Activity</string>
+    <string name="title_activity_hidden_view">HiddenViewActivity</string>
+    <string name="title_activity_switch_access">SwitchAccessActivity</string>
+    <string name="title_activity_scratch">ScratchActivity</string>
+    <string name="title_activity_important_for_a11y">Important For Accessibility Activity</string>
+    <string name="title_activity_expand_touch_area">Expand Touch Area Activity</string>
+    <string name="title_activity_insufficient_contrast">Insufficient Contrast Activity</string>
+
+    <string name="play">Play</string>
+    <string name="cancel">Cancel</string>
+    <string name="pause">Pause</string>
+    <string name="share">Share</string>
+
+    <string name="which_android_version">Which Android version brought you Material Design?</string>
+    <string name="lollipop">Lollipop</string>
+
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect</string>
+
+    <string name="enter_favorite_song">Enter favorite song</string>
+
+    <string name="google_developers_text">Google Developers</string>
+
+    <string name="google_developers_on_youtube">Google Developers on YouTube</string>
+
+    <string name="google_developers_on_gplus">Google Developers on GPlus</string>
+
+    <string name="jukebox">Jukebox</string>
+
+    <string name="add_item_fab">Add item</string>
+
+    <string name="go">Go</string>
+
+    <string name="song_edit_text_label">Song</string>
+    <string name="title_activity_content_grouping">Content Grouping Activity</string>
+
+    <string name="song_details">Song Details</string>
+    <string name="label_song_name">Name</string>
+    <string name="value_song_name">Hey Jude</string>
+    <string name="label_song_artists">Artists</string>
+    <string name="value_song_artists">The Beatles</string>
+    <string name="label_song_cost">Cost</string>
+    <string name="value_song_cost">$1.45</string>
+
+
+    <string name="lorem_ipsum_title">Lorem Ipsum</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+        eget, arcu.
+    </string>
+
+    <string name="fix_low_contrast">Fix low contrast</string>
+</resources>
