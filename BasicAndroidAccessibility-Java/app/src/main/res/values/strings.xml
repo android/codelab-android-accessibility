@@ -18,20 +18,15 @@
 <resources>
     <string name="app_name">Basic Android Accessibility Codelab</string>
 
-    <string name="title_activity_content_labeling">
-        Content labeling activity</string>
-    <string name="title_activity_live_region">Live region activity</string>
+    <string name="title_activity_content_labeling">Content Labeling Screen</string>
+    <string name="title_activity_live_region">Live Region Screen</string>
+    <string name="title_activity_content_grouping">Content Grouping Screen</string>
+    <string name="title_activity_main">Main Screen</string>
+    <string name="title_activity_expand_touch_area">Expand Touch Area Screen</string>
+    <string name="title_activity_insufficient_contrast">Insufficient Contrast Screen</string>
 
-    <string name="title_activity_main">Main Activity</string>
-    <string name="title_activity_hidden_view">HiddenViewActivity</string>
-    <string name="title_activity_switch_access">SwitchAccessActivity</string>
-    <string name="title_activity_scratch">ScratchActivity</string>
-    <string name="title_activity_important_for_a11y">Important For Accessibility Activity</string>
-    <string name="title_activity_expand_touch_area">Expand Touch Area Activity</string>
-    <string name="title_activity_insufficient_contrast">Insufficient Contrast Activity</string>
-
+    <!-- These three strings are currently unused but are added to the code during the codelab -->
     <string name="play">Play</string>
-    <string name="cancel">Cancel</string>
     <string name="pause">Pause</string>
     <string name="share">Share</string>
 
@@ -42,13 +37,6 @@
     <string name="incorrect">Incorrect</string>
 
     <string name="enter_favorite_song">Enter favorite song</string>
-
-    <string name="google_developers_text">Google Developers</string>
-
-    <string name="google_developers_on_youtube">Google Developers on YouTube</string>
-
-    <string name="google_developers_on_gplus">Google Developers on GPlus</string>
-
     <string name="jukebox">Jukebox</string>
 
     <string name="add_item_fab">Add item</string>
@@ -56,7 +44,6 @@
     <string name="go">Go</string>
 
     <string name="song_edit_text_label">Song</string>
-    <string name="title_activity_content_grouping">Content Grouping Activity</string>
 
     <string name="song_details">Song Details</string>
     <string name="label_song_name">Name</string>
@@ -65,7 +52,6 @@
     <string name="value_song_artists">The Beatles</string>
     <string name="label_song_cost">Cost</string>
     <string name="value_song_cost">$1.45</string>
-
 
     <string name="lorem_ipsum_title">Lorem Ipsum</string>
     <string name="lorem_ipsum">
