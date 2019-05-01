@@ -24,4 +24,5 @@
     tools:context=".InsufficientContrastFragment">
 
     <include layout="@layout/content_insufficient_contrast" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
