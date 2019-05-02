@@ -37,8 +37,8 @@ public class ExpandTouchAreaFragment extends Fragment {
     private ImageButton mToggleImageButton;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_expand_touch_area, container, false);
     }
@@ -48,7 +48,7 @@ public class ExpandTouchAreaFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
 
         mToggleImageButton = view.findViewById(R.id.play_pause_toggle_view);
         if (mToggleImageButton != null) {

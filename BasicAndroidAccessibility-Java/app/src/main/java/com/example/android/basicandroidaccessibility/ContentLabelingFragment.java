@@ -36,8 +36,8 @@ public class ContentLabelingFragment extends Fragment {
     private ImageButton mPlayPauseToggleImageView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_content_labeling, container, false);
     }
@@ -47,7 +47,7 @@ public class ContentLabelingFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
 
         mPlayPauseToggleImageView = view.findViewById(R.id.play_pause_toggle_view);
         if (mPlayPauseToggleImageView != null) {

@@ -45,8 +45,8 @@ public class InsufficientContrastFragment extends Fragment {
     private FloatingActionButton mAddItemFab;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_insufficient_contrast, container, false);
     }
@@ -56,7 +56,7 @@ public class InsufficientContrastFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
 
         mLoremIpsumContainer = view.findViewById(R.id.lorem_ipsum_container);
         mLoremIpsumTitle = view.findViewById(R.id.lorem_ipsum_title);
@@ -79,19 +79,19 @@ public class InsufficientContrastFragment extends Fragment {
     }
 
     private void useHighContrast() {
-        mLoremIpsumContainer.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.white));
-        mLoremIpsumTitle.setTextColor(ContextCompat.getColor(getContext(), R.color.medium_grey));
-        mLoremIpsumText.setTextColor(ContextCompat.getColor(getContext(), R.color.dark_grey));
-        mAddItemFab.setBackgroundTintList(ContextCompat.getColorStateList(getContext(),
+        mLoremIpsumContainer.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.white));
+        mLoremIpsumTitle.setTextColor(ContextCompat.getColor(requireContext(), R.color.medium_grey));
+        mLoremIpsumText.setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_grey));
+        mAddItemFab.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(),
                 R.color.colorPrimaryDark));
     }
 
     private void useLowContrast() {
-        mLoremIpsumContainer.setBackgroundColor(ContextCompat.getColor(getContext(),
+        mLoremIpsumContainer.setBackgroundColor(ContextCompat.getColor(requireContext(),
                 R.color.very_light_grey));
-        mLoremIpsumTitle.setTextColor(ContextCompat.getColor(getContext(), R.color.light_grey));
-        mLoremIpsumText.setTextColor(ContextCompat.getColor(getContext(), R.color.medium_grey));
-        mAddItemFab.setBackgroundTintList(ContextCompat.getColorStateList(getContext(),
+        mLoremIpsumTitle.setTextColor(ContextCompat.getColor(requireContext(), R.color.light_grey));
+        mLoremIpsumText.setTextColor(ContextCompat.getColor(requireContext(), R.color.medium_grey));
+        mAddItemFab.setBackgroundTintList(ContextCompat.getColorStateList(requireContext(),
                 R.color.colorPrimaryLight));
     }
 }

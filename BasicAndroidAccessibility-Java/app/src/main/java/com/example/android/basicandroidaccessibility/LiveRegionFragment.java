@@ -42,8 +42,8 @@ public class LiveRegionFragment extends Fragment {
     private TextView mFeedbackTextView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_live_region, container, false);
     }
@@ -53,7 +53,7 @@ public class LiveRegionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
 
         List<String> androidVersions = new ArrayList<>(Arrays.asList(getResources().getStringArray(
                 R.array.android_versions)));
@@ -77,11 +77,11 @@ public class LiveRegionFragment extends Fragment {
                     int indexOfCheckedChild = radioGroup.indexOfChild(view.findViewById(checkedId));
                     if (indexOfCheckedChild == correctAnswerIndex) {
                         mFeedbackTextView.setText(R.string.correct);
-                        mFeedbackTextView.setBackgroundColor(ContextCompat.getColor(getContext(),
+                        mFeedbackTextView.setBackgroundColor(ContextCompat.getColor(requireContext(),
                                 R.color.green));
                     } else {
                         mFeedbackTextView.setText(R.string.incorrect);
-                        mFeedbackTextView.setBackgroundColor(ContextCompat.getColor(getContext(),
+                        mFeedbackTextView.setBackgroundColor(ContextCompat.getColor(requireContext(),
                                 R.color.red));
                     }
                 }
