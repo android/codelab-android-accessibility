@@ -31,26 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.android.basicandroidaccessibility.ContentLabelingActivity"
-            android:label="@string/title_activity_content_labeling"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.android.basicandroidaccessibility.LiveRegionActivity"
-            android:label="@string/title_activity_live_region"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.android.basicandroidaccessibility.ExpandTouchAreaActivity"
-            android:label="@string/title_activity_expand_touch_area"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.android.basicandroidaccessibility.ContentGroupingActivity"
-            android:label="@string/title_activity_content_grouping"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.android.basicandroidaccessibility.InsufficientContrastActivity"
-            android:label="@string/title_activity_insufficient_contrast"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

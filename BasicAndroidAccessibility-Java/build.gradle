@@ -1,4 +1,7 @@
 buildscript {
+    ext {
+        navigationVersion = "2.0.0"
+    }
     repositories {
         jcenter()
         google()
