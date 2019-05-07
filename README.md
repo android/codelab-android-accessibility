@@ -2,8 +2,7 @@
 
 This folder contains the source code for the following codelabs:
 
-- [BasicAndroidAccessibility](https://github.com/googlecodelabs/basic-android-accessibility/tree/master/BasicAndroidAccessibility):
-a first course in understanding the basics of Android accessibility.
+- BasicAndroidAccessibility: a first course in understanding the basics of Android accessibility.  It is available in [Java](https://github.com/googlecodelabs/android-accessibility/tree/master/BasicAndroidAccessibility-Java) and [Kotlin](https://github.com/googlecodelabs/android-accessibility/tree/master/BasicAndroidAccessibility-Kotlin) versions.
 
 - [GlobalActionBarService](https://github.com/googlecodelabs/basic-android-accessibility/tree/master/GlobalActionBarService):
 a codelab for learning how to create an accessibility service from scratch.
