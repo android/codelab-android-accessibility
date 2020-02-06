@@ -55,4 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_insufficient_contrast" />
+
+    <Button
+        android:id="@+id/frame_focus_order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_frame_focus_order" />
 </LinearLayout>

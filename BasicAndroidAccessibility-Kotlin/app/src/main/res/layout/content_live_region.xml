@@ -52,5 +52,6 @@
         android:background="@null"
         android:textColor="@color/white"
         android:padding="@dimen/standard_padding"
-        android:textSize="@dimen/large_text" />
+        android:textSize="@dimen/large_text"
+        android:accessibilityLiveRegion="polite"/>
 </LinearLayout>

@@ -21,11 +21,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
 
-class ContentLabelingFragment : Fragment() {
-
-    private var playing = false
-    private lateinit var playPauseToggleImageView: ImageButton
+class FrameFocusOrderFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -33,27 +32,14 @@ class ContentLabelingFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_content_labeling, container, false)
+        return inflater.inflate(R.layout.fragment_frame_focus_order, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        playPauseToggleImageView = view.findViewById(R.id.play_pause_toggle_view)
+        val imgView = activity?.findViewById<ImageView>(R.id.yoda)
+        Picasso.get().load("https://1.bp.blogspot.com/-AGCncJyhAzs/XdnAsWwhk4I/AAAAAAAAAb8/WArrd_YdyPEoD2TKDf85CVdwT2UUY5u8QCLcBGAsYHQ/w1152-d/baby-yoda-wallpaper-art-by-Guzz%2BSoares.png").into(imgView)
 
-        updateImageButton()
-        playPauseToggleImageView.setOnClickListener {
-            playing = !playing
-            updateImageButton()
-        }
     }
 
-    private fun updateImageButton() {
-        if (playing) {
-            playPauseToggleImageView.setImageResource(R.drawable.ic_pause)
-            playPauseToggleImageView.contentDescription = getString(R.string.pause)
-        } else {
-            playPauseToggleImageView.setImageResource(R.drawable.ic_play_arrow)
-            playPauseToggleImageView.contentDescription = getString(R.string.play)
-        }
-    }
 }

@@ -23,6 +23,7 @@
     <string name="fragment_home">Main Screen</string>
     <string name="fragment_expand_touch_area">Expand Touch Area Screen</string>
     <string name="fragment_insufficient_contrast">Insufficient Contrast Screen</string>
+    <string name="fragment_frame_focus_order">Frame Focus Order</string>
 
     <!-- These three strings are currently unused but are added to the code during the codelab -->
     <string name="play">Play</string>
@@ -62,4 +63,9 @@
     </string>
 
     <string name="fix_low_contrast">Fix low contrast</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="baby_yoda">Baby Yoda</string>
+    <string name="add_image">Add Image</string>
 </resources>

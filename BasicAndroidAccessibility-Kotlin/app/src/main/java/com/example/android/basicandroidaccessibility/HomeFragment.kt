@@ -56,6 +56,10 @@ class HomeFragment : Fragment() {
         buttonInsufficientContrast.setOnClickListener(Navigation.createNavigateOnClickListener(
                 R.id.action_homeFragment_to_insufficientContrastFragment, null))
 
+        val buttonFrameFocusOrder = view.findViewById<Button>(R.id.frame_focus_order_button)
+        buttonFrameFocusOrder.setOnClickListener(Navigation.createNavigateOnClickListener(
+                R.id.action_homeFragment_to_frameFocusOrderFragment, null))
+
     }
 }
 

@@ -81,7 +81,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@null"
-        android:src="@drawable/ic_share" />
+        android:src="@drawable/ic_share"
+        android:contentDescription="@string/share"/>
 
     <ImageButton
         android:id="@+id/play_pause_toggle_view"

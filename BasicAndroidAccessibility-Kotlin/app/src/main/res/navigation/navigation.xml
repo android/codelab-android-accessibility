@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_homeFragment_to_insufficientContrastFragment"
             app:destination="@id/insufficientContrastFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_frameFocusOrderFragment"
+            app:destination="@id/frameFocusOrderFragment" />
     </fragment>
     <fragment
         android:id="@+id/contentGroupingFragment"
@@ -62,4 +65,10 @@
         android:name="com.example.android.basicandroidaccessibility.InsufficientContrastFragment"
         android:label="@string/fragment_insufficient_contrast"
         tools:layout="@layout/fragment_insufficient_contrast" />
+
+    <fragment
+        android:id="@+id/frameFocusOrderFragment"
+        android:name="com.example.android.basicandroidaccessibility.FrameFocusOrderFragment"
+        android:label="@string/fragment_frame_focus_order"
+        tools:layout="@layout/fragment_frame_focus_order" />
 </navigation>
