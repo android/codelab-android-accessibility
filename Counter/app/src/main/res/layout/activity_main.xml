@@ -45,7 +45,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.111" />
 
-        <!-- TODO: change textColor to darkGrey to fix contrast -->
         <TextView
             android:id="@+id/countTV"
             android:layout_width="wrap_content"
@@ -53,7 +52,7 @@
             android:background="@color/lightGrey"
             android:padding="@dimen/padding_large"
             android:text="@{Integer.toString(count)}"
-            android:textColor="@color/grey"
+            android:textColor="@color/darkGrey"
             android:textSize="@dimen/heading"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.499"
@@ -62,15 +61,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.602" />
 
-        <!-- TODO: add contentDescription to fix missing label issue -->
-        <!-- TODO: add padding to expand touchable area -->
         <ImageView
             android:id="@+id/add_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
-
+            android:contentDescription="@string/increment"
+            android:padding="@dimen/icon_padding"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -78,16 +75,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.942"
             app:srcCompat="@drawable/ic_add" />
-
-        <!-- TODO: add contentDescription to fix missing label issue -->
-        <!-- TODO: add padding to expand touchable area -->
+        
         <ImageView
             android:id="@+id/subtract_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
-
+            android:contentDescription="@string/decrement"
+            android:padding="@dimen/icon_padding"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintLeft_toLeftOf="parent"
